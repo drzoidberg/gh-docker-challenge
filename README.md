@@ -24,7 +24,7 @@ docker run --name mi-primer-contenedor -p 49161:8080 -d docker-my-first-steps
 
 ## Basic useful docker cli commands
  CLI command                      | Description
---------------------------------- |----------------------------------------------------------------------
+:------ |:---------------------------------------------------------------------
  **docker container [command]**       | rm , ls... type --help for more info
  **docker image [command]**           | rm , ls... type --help for more info
  **docker ps -a**                     | logs all **docker containers, including its states
@@ -37,7 +37,7 @@ docker run --name mi-primer-contenedor -p 49161:8080 -d docker-my-first-steps
 
 ##  Useful docker tags
  Command                          | Description
---------------------------------- |----------------------------------------------------------------------
+:-------------------------------- |:---------------------------------------------------------------------
  **FROM**                           | Configures the base image to use
  **WORKDIR**                        | Establishes the working directory for the cmd directives that will be executed
  **RUN**                            | Executes a command & changes the image

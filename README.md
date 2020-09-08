@@ -61,6 +61,6 @@ docker run --name gh-challenge-container -v /Volumes/tmp/gh-docker-challenge/sha
 ## Project development
 - Not being able to make run the volumes by using the VOLUME tag in the dockerfile, I've opted for using the -v flag to specify the path both the shared directory in the host and the shared directory in the container.
 
-- I was having trouble installing nginx for the ubuntu version tagged in the challenge. Some ubuntu repositories wasen available, so I opted for the 'focal' tag, that run without issues.
+- I was having trouble installing nginx for the ubuntu version tagged in the challenge. Some ubuntu repositories wasn't available, so I opted for the 'focal' tag, that run without issues.
 
 - Then I updated the image and installed nginx. Later I configured it minimally and followed the rest of the challenge instructions.

@@ -25,26 +25,26 @@ docker run --name mi-primer-contenedor -p 49161:8080 -d docker-my-first-steps
 ## Basic useful docker cli commands
  CLI command                      | Description
 --------------------------------- |----------------------------------------------------------------------
- docker container [command]       | rm , ls... type --help for more info
- docker image [command]           | rm , ls... type --help for more info
- docker ps -a                     | logs all docker containers, including its states
- docker stop [container]          | stop container
- docker logs -f [container]       | show logs from main process
- docker rm $(docker ps -a -q)     | remove all stopped containers
- docker exec -it [container] bash | access to container bash
- docker volume prune              | remove all orphan volumes
- docker system prune -a           | remove all infrastrucure created using doker
+ **docker container [command]**       | rm , ls... type --help for more info
+ **docker image [command]**           | rm , ls... type --help for more info
+ **docker ps -a**                     | logs all **docker containers, including its states
+ **docker stop [container]**          | stop container
+ **docker logs -f [container]**       | show logs from main process
+ **docker rm $(docker ps -a -q)**     | remove all stopped containers
+ **docker exec -it [container] bash** | access to container bash
+ **docker volume p**rune              | remove all orphan volumes
+ **docker system prune -a**           | remove all infrastrucure created using doker
 
 ##  Useful docker tags
  Command                          | Description
 --------------------------------- |----------------------------------------------------------------------
- *FROM*                           | Configures the base image to use
- *WORKDIR*                        | Establishes the working directory for the cmd directives that will be executed
- *RUN*                            | Executes a command & changes the image
- *COPY*                           | Copy files from host to guest
- *ENV*                            | Initializes environment viariables
- *EXPOSE*                         | Exposes an port
- *ENTRYPOINT*                     | Defines the default entry point from the container
- *CMD*                            | Configure default commands to be executed
- *USER*                           | Establishes the user that will execute the image's containers
- *VOLUME*                         | Mounts a directory from host to the container
+ **FROM**                           | Configures the base image to use
+ **WORKDIR**                        | Establishes the working directory for the cmd directives that will be executed
+ **RUN**                            | Executes a command & changes the image
+ **COPY**                           | Copy files from host to guest
+ **ENV**                            | Initializes environment viariables
+ **EXPOSE**                         | Exposes an port
+ **ENTRYPOINT**                     | Defines the default entry point from the container
+ **CMD**                            | Configure default commands to be executed
+ **USER**                           | Establishes the user that will execute the image's containers
+ **VOLUME**                         | Mounts a directory from host to the container

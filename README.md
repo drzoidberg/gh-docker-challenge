@@ -22,7 +22,7 @@ Then, type this to generate a docker container based upon your recently built im
 docker run --name mi-primer-contenedor -p 49161:8080 -d docker-my-first-steps
 ```
 
-## Basic useful docker cli commands
+## Basic useful docker CLI commands
  CLI command                                                                     | Description
 :------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------------------
  **docker build . -t [container-name]**                                          | builds the container using given container-name
@@ -57,3 +57,10 @@ cd gh-docker-challenge
 docker build . -t gh-docker-challenge-image
 docker run --name gh-challenge-container -v /Volumes/tmp/gh-docker-challenge/shared:/usr/share/nginx/html/ -p 8088:80 -d gh-docker-challenge-image
 ```
+
+## Project development
+- Not being able to make run the volumes by using the VOLUME tag in the dockerfile, I've opted for using the -v flag to specify the path both the shared directory in the host and the shared directory in the container.
+
+- I was having trouble installing nginx for the ubuntu version tagged in the challenge. Some ubuntu repositories wasen available, so I opted for the 'focal' tag, that run without issues.
+
+- Then I updated the image and installed nginx. Later I configured it minimally and followed the rest of the challenge instructions.

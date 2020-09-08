@@ -36,7 +36,6 @@ docker run --name mi-primer-contenedor -p 49161:8080 -d docker-my-first-steps
  **docker exec -it [container] bash**                                            | accesss to container bash
  **docker volume p**rune                                                         | removes all orphan volumes
  **docker system prune -a**                                                      | removes all infrastrucure created using docker
- **docker system prune -a**                                                      | removes all infrastrucure created using docker
 
 ##  Useful docker tags
  Command                                                                         | Description
@@ -51,3 +50,10 @@ docker run --name mi-primer-contenedor -p 49161:8080 -d docker-my-first-steps
  **CMD**                                                                         | Configure default commands to be executed
  **USER**                                                                        | Establishes the user that will execute the image's containers
  **VOLUME**                                                                      | Mounts a directory from host to the container
+
+## Sequence of CLI commands used in the challenge
+```bash
+cd gh-docker-challenge
+docker build . -t gh-docker-challenge-image
+docker run --name gh-challenge-container -v /Volumes/tmp/gh-docker-challenge/shared:/usr/share/nginx/html/ -p 8088:80 -d gh-docker-challenge-image
+```

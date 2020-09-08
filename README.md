@@ -35,3 +35,13 @@ docker volume prune # remove all orphan volumes
 docker system prune -a # remove all infrastrucure created using doker
 ```
 
+##  Useful docker tags
+- FROM -> Configura la imagen base para usar.
+- WORKDIR -> Establece el directorio para las directivas de CMD que se ejecutarán. - RUN->Ejecuta un comando y cambia la imagen.
+- COPY -> copia archivos del host al guest
+- ENV -> Inicializa variables de entorno
+- EXPOSE -> Expone un puerto al exterior
+- LABEL maintainer="mi@emial.com"
+- ENTRYPOINT -> Punto de entrada por defecto de la aplicación desde el contenedor - CMD ->Configure comandos por defecto para ser ejecutado
+- USER-> Establece el usuario para ejecutar los contenedores del la imagen.
+- VOLUME -> Monta un directorio desde el host al contenedor.
